@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InterviewAI - Redefining Remote Interviews with AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">
+                <span>Interview</span><span class="highlight">AI</span>
+            </div>
+            <div class="nav-links">
+                <a href="#how-it-works">How It Works</a>
+                <a href="#features">Features</a>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1>Redefining Remote Interviews with AI</h1>
+                <p class="tagline">Secure. Smart. Human-like.</p>
+                <p class="description">
+                    InterviewAI delivers a seamless virtual interview experience powered by advanced AI technology, 
+                    ensuring fair assessment and authentic candidate evaluation.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#how-it-works" class="btn btn-primary">See How It Works</a>
+                    <a href="#contact" class="btn btn-secondary">Request Demo</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="animation-container">
+                    <div class="ai-illustration">
+                        <!-- SVG animation will go here -->
+                        <img src="banner.svg" alt="AI Interview Concept">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,128C672,128,768,160,864,176C960,192,1056,192,1152,176C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Our streamlined process ensures a comprehensive and fair interview experience</p>
+            </div>
+
+            <div class="process-timeline">
+                <div class="timeline-step active" data-step="admin">
+                    <div class="step-number">1</div>
+                    <h3>Admin Setup</h3>
+                </div>
+                <div class="timeline-step" data-step="identity">
+                    <div class="step-number">2</div>
+                    <h3>Identity Validation</h3>
+                </div>
+                <div class="timeline-step" data-step="interview">
+                    <div class="step-number">3</div>
+                    <h3>AI Interview</h3>
+                </div>
+                <div class="timeline-step" data-step="evaluation">
+                    <div class="step-number">4</div>
+                    <h3>Evaluation</h3>
+                </div>
+            </div>
+
+            <!-- Admin-Scheduled Interview Module -->
+            <div class="process-content active" id="admin-content">
+                <div class="process-details">
+                    <h3>Admin-Scheduled Interview</h3>
+                    <p>Administrators can easily set up customized interviews tailored to specific roles and requirements.</p>
+                    
+                    <div class="admin-steps">
+                        <div class="admin-step">
+                            <div class="step-icon">
+                                <i class="fas fa-list-check"></i>
+                            </div>
+                            <h4>Select Topic</h4>
+                            <p>Choose from a wide range of technical and soft skill topics</p>
+                        </div>
+                        <div class="admin-step">
+                            <div class="step-icon">
+                                <i class="fas fa-gauge-high"></i>
+                            </div>
+                            <h4>Set Difficulty</h4>
+                            <p>Adjust difficulty levels based on position requirements</p>
+                        </div>
+                        <div class="admin-step">
+                            <div class="step-icon">
+                                <i class="fas fa-user-plus"></i>
+                            </div>
+                            <h4>Assign Candidate</h4>
+                            <p>Schedule and send automated invitations to candidates</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-image">
+                    <div class="admin-dashboard">
+                        <div class="dashboard-header">
+                            <h4>Interview Setup Dashboard</h4>
+                        </div>
+                        <div class="dashboard-content">
+                            <div class="form-group">
+                                <label>Interview Type</label>
+                                <select>
+                                    <option>Full-Stack Developer</option>
+                                    <option>Data Scientist</option>
+                                    <option>UX Designer</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Difficulty Level</label>
+                                <div class="difficulty-slider">
+                                    <span>Beginner</span>
+                                    <input type="range" min="1" max="3" value="2">
+                                    <span>Advanced</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Topics</label>
+                                <div class="topic-tags">
+                                    <span class="tag selected">JavaScript</span>
+                                    <span class="tag selected">React</span>
+                                    <span class="tag">Node.js</span>
+                                    <span class="tag selected">System Design</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Face Recognition Module -->
+            <div class="process-content" id="identity-content">
+                <div class="process-details">
+                    <h3>Step 1: Identity Validation</h3>
+                    <p>Our advanced face recognition system ensures the authenticity of candidates and prevents impersonation.</p>
+                    
+                    <div class="identity-steps">
+                        <div class="identity-step">
+                            <div class="step-icon">
+                                <i class="fas fa-camera"></i>
+                            </div>
+                            <h4>Upload Reference Images</h4>
+                            <p>Candidates provide facial images for verification</p>
+                        </div>
+                        <div class="identity-step">
+                            <div class="step-icon">
+                                <i class="fas fa-shield-check"></i>
+                            </div>
+                            <h4>Automatic Validation</h4>
+                            <p>AI verifies identity and monitors posture throughout</p>
+                        </div>
+                        <div class="identity-step">
+                            <div class="step-icon">
+                                <i class="fas fa-user-check"></i>
+                            </div>
+                            <h4>Anti-Impersonation</h4>
+                            <p>Continuous monitoring prevents identity fraud</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-image">
+                    <div class="face-recognition-demo">
+                        <div class="face-scan-animation">
+                            <div class="face-outline">
+                                <div class="scan-line"></div>
+                            </div>
+                        </div>
+                        <div class="recognition-status">
+                            <div class="status-indicator verified">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Identity Verified</span>
+                            </div>
+                            <div class="confidence-meter">
+                                <div class="meter-label">Confidence Score</div>
+                                <div class="meter-bar">
+                                    <div class="meter-fill" style="width: 92%"></div>
+                                </div>
+                                <div class="meter-value">92%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Real-Time AI Interview Section -->
+            <div class="process-content" id="interview-content">
+                <div class="process-details">
+                    <h3>Step 2: The Live AI Experience</h3>
+                    <p>Our AI interviewer conducts dynamic conversations that adapt to candidate responses in real-time.</p>
+                    
+                    <div class="interview-features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="feature-details">
+                                <h4>Dynamic Questions</h4>
+                                <p>AI generates contextually relevant questions based on the candidate's background</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="feature-details">
+                                <h4>Integrated Code Editor</h4>
+                                <p>Built-in IDE for technical assessments with real-time test case evaluation</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-microphone-lines"></i>
+                            </div>
+                            <div class="feature-details">
+                                <h4>Speech Analysis</h4>
+                                <p>Evaluates communication clarity, confidence, and technical accuracy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-image">
+                    <div class="interview-interface">
+                        <div class="interview-header">
+                            <div class="interview-title">Technical Interview: Full-Stack Developer</div>
+                            <div class="timer">23:45 remaining</div>
+                        </div>
+                        <div class="interview-body">
+                            <div class="ai-interviewer">
+                                <div class="ai-avatar">
+                                    <div class="avatar-pulse"></div>
+                                </div>
+                                <div class="ai-message">
+                                    <p>Can you explain how you would implement a caching mechanism in a React application to improve performance?</p>
+                                </div>
+                            </div>
+                            <div class="transcript-panel">
+                                <div class="transcript-header">
+                                    <h4>Live Transcript</h4>
+                                </div>
+                                <div class="transcript-content">
+                                    <p><span class="speaker">AI:</span> Let's discuss React performance optimization. What strategies have you used?</p>
+                                    <p><span class="speaker">You:</span> I've worked with memoization using React.memo and useMemo to prevent unnecessary re-renders.</p>
+                                    <p><span class="speaker">AI:</span> Good. Can you explain how you would implement a caching mechanism in a React application?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="code-editor">
+                            <div class="editor-header">
+                                <span>Code Editor</span>
+                                <div class="editor-actions">
+                                    <button class="btn btn-small">Run</button>
+                                    <button class="btn btn-small btn-outline">Reset</button>
+                                </div>
+                            </div>
+                            <div class="editor-content">
+                                <pre><code>function createCache() {
+  const cache = {};
+  
+  return {
+    get(key) {
+      return cache[key];
+    },
+    set(key, value) {
+      cache[key] = value;
+    }
+  };
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Post-Interview Evaluation -->
+            <div class="process-content" id="evaluation-content">
+                <div class="process-details">
+                    <h3>Step 3: Instant Feedback & Insights</h3>
+                    <p>Comprehensive evaluation with actionable insights delivered immediately after the interview.</p>
+                    
+                    <div class="evaluation-features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-column"></i>
+                            </div>
+                            <div class="feature-details">
+                                <h4>Performance Analytics</h4>
+                                <p>Detailed breakdown of strengths and improvement areas</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-face-smile"></i>
+                            </div>
+                            <div class="feature-details">
+                                <h4>Sentiment Analysis</h4>
+                                <p>Evaluation of confidence, clarity, and communication style</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="feature-details">
+                                <h4>Comprehensive Reports</h4>
+                                <p>Downloadable PDF with detailed assessment and recommendations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-image">
+                    <div class="evaluation-dashboard">
+                        <div class="dashboard-header">
+                            <h4>Interview Performance Report</h4>
+                        </div>
+                        <div class="dashboard-content">
+                            <div class="score-overview">
+                                <div class="score-circle">
+                                    <svg viewBox="0 0 36 36">
+                                        <path class="score-circle-bg"
+                                            d="M18 2.0845
+                                            a 15.9155 15.9155 0 0 1 0 31.831
+                                            a 15.9155 15.9155 0 0 1 0 -31.831"
+                                        />
+                                        <path class="score-circle-fill"
+                                            stroke-dasharray="75, 100"
+                                            d="M18 2.0845
+                                            a 15.9155 15.9155 0 0 1 0 31.831
+                                            a 15.9155 15.9155 0 0 1 0 -31.831"
+                                        />
+                                        <text x="18" y="20.35" class="score-text">75</text>
+                                    </svg>
+                                </div>
+                                <div class="score-details">
+                                    <h5>Overall Score</h5>
+                                    <p>Above average performance</p>
+                                </div>
+                            </div>
+                            <div class="performance-metrics">
+                                <div class="metric">
+                                    <div class="metric-label">Technical Knowledge</div>
+                                    <div class="metric-bar">
+                                        <div class="bar-fill" style="width: 82%"></div>
+                                    </div>
+                                    <div class="metric-value">82%</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-label">Problem Solving</div>
+                                    <div class="metric-bar">
+                                        <div class="bar-fill" style="width: 78%"></div>
+                                    </div>
+                                    <div class="metric-value">78%</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-label">Communication</div>
+                                    <div class="metric-bar">
+                                        <div class="bar-fill" style="width: 65%"></div>
+                                    </div>
+                                    <div class="metric-value">65%</div>
+                                </div>
+                            </div>
+                            <div class="trust-index">
+                                <h5>Trust Index</h5>
+                                <div class="trust-details">
+                                    <div class="trust-score high">
+                                        <i class="fas fa-shield-check"></i>
+                                        <span>High Integrity</span>
+                                    </div>
+                                    <div class="trust-incidents">
+                                        <span>Suspicious activities detected: </span>
+                                        <strong>0</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="report-actions">
+                                <button class="btn btn-primary"><i class="fas fa-download"></i> Download Full Report</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why InterviewAI Stands Out</h2>
+                <p>Our platform combines cutting-edge technology with intuitive design for a superior interview experience</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Secure & Private</h3>
+                    <p>End-to-end encryption and strict data privacy protocols protect sensitive information</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Adaptive Intelligence</h3>
+                    <p>Our AI learns from each interaction to deliver increasingly relevant interview experiences</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Real-time Analysis</h3>
+                    <p>Instant evaluation of technical skills, communication ability, and problem-solving approach</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Human-like Interaction</h3>
+                    <p>Natural conversation flow with contextual follow-up questions and adaptive responses</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Global Accessibility</h3>
+                    <p>Available 24/7 for candidates in any timezone with multilingual support</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Bias Reduction</h3>
+                    <p>Standardized evaluation criteria help eliminate unconscious bias in the interview process</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2023 InterviewAI. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
